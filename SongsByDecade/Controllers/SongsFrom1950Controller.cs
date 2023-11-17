@@ -43,8 +43,7 @@ namespace SongsByDecade.Controllers
         {
             return View();
         }
-
-        [HttpPost]
+     
         public IActionResult AddSongToDatabase(SongsFrom1950 song)
         {
             _repo.AddSong(song);
@@ -61,7 +60,6 @@ namespace SongsByDecade.Controllers
             return View(song);
         }
 
-        [HttpPost]
         public IActionResult DeleteSongFromDatabase(int id)
         {
             _repo.DeleteSong(id);

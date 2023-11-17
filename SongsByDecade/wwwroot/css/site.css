@@ -1,6 +1,7 @@
-html {
-  font-size: 14px;
-}
+* {
+    font-family: "Permanent Marker", sans-serif;
+} 
+
 
 @media (min-width: 768px) {
   html {
