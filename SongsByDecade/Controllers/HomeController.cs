@@ -1,7 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SongsByDecade.Models;
 using System.Diagnostics;
-
+using Microsoft.Extensions.Logging;
+// This controller handles requests related to the home page and error handling.
+// Key Points:
+// - Actions for rendering the home page and privacy policy(I do not utilize the privacy
+// policy in this application.  It is good practice to keep the code in case you have a
+// a use for it later.
+// - Error handling action for displaying error details.
 namespace SongsByDecade.Controllers
 {
     public class HomeController : Controller
