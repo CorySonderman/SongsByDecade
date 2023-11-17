@@ -30,8 +30,8 @@
                     <a href="@($"https://www.youtube.com/results?search_query={Uri.EscapeDataString(song.Title)}")" target="_blank">@song.Title</a>
                 </td>
                 <td>
-                    <!-- Hyperlink to Wikedia allowing user to learn about the artist -->
-                    <a href="@($"https://en.wikipedia.org/wiki/{Uri.EscapeDataString(song.Artist.Replace(" ", "_"))}")" target="_blank">@song.Artist</a>
+                    <!-- Hyperlink to Wikipedia allowing the user to learn about the artist -->
+                    <a href="@($"https://en.wikipedia.org/wiki/{Uri.EscapeDataString(song.Artist)}")" target="_blank">@song.Artist</a>
                 </td>
                 <td>@song.Genre</td>
                 <td>@song.YearReleased</td>
