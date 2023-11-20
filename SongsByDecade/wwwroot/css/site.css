@@ -19,16 +19,32 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-image: url('../images/JukeBox2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }
-/*Custom button I created to modify the default which was blue blackground with white text.
-  I also added a shadow effect.  w3schools has a great resource for css 
-    https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp */
+
+    body, body * {
+        color: white;
+    }
+/* Remove underlines from all links */
+a {
+    text-decoration: none;
+}
+
+
+
 .custom-button {
     background-color: transparent;
-    color: black;
+    color:white;
     font-size: 16px;
     letter-spacing: 2px;
     font-weight: bold;
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.footer {
+    color: white !important;
 }

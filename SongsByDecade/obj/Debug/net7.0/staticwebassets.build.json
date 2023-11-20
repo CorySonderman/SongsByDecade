@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/FGK2u8rRlu7EXmjnD2yrr/UafJZqRPGerzfN4k3xMA=",
+  "Hash": "feNvuc/ECQRtt9UPNmyAGMMpISagP9roxxE0v2SDdzI=",
   "Source": "SongsByDecade",
   "BasePath": "_content/SongsByDecade",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\sonde\\Desktop\\repos\\SongsByDecade\\SongsByDecade\\wwwroot\\Images\\Jukebox2.jpg",
+      "SourceId": "SongsByDecade",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sonde\\Desktop\\repos\\SongsByDecade\\SongsByDecade\\wwwroot\\",
+      "BasePath": "_content/SongsByDecade",
+      "RelativePath": "Images/Jukebox2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Jukebox2.jpg"
     },
     {
       "Identity": "C:\\Users\\sonde\\Desktop\\repos\\SongsByDecade\\SongsByDecade\\wwwroot\\js\\site.js",

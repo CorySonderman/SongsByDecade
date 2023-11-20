@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\SongsByDecade.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\sonde\\Desktop\\repos\\SongsByDecade\\SongsByDecade\\wwwroot\\Images\\Jukebox2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Jukebox2.jpg"
+    },
+    {
       "Id": "C:\\Users\\sonde\\Desktop\\repos\\SongsByDecade\\SongsByDecade\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
