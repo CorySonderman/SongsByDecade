@@ -13,17 +13,29 @@
 {
     <input asp-for="ID" type="hidden" value="@Model.ID" />
 
-    <label asp-for="Title" class="control-label">Title</label>
-    <input type="text" name="Title" class="form-control" value="@Model.Title" />
+    <div class="form-group">
+        <label asp-for="Title" class="control-label">Title</label>
+        <input type="text" name="Title" class="form-control" value="@Model.Title" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
 
-    <label asp-for="Artist" class="control-label">Artist</label>
-    <input type="text" name="Artist" class="form-control" value="@Model.Artist" />
+    <div class="form-group">
+        <label asp-for="Artist" class="control-label">Artist</label>
+        <input type="text" name="Artist" class="form-control" value="@Model.Artist" />
+        <span asp-validation-for="Artist" class="text-danger"></span>
+    </div>
 
-    <label asp-for="Genre" class="control-label">Genre</label>
-    <input type="text" name="Genre" class="form-control" value="@Model.Genre" />
+    <div class="form-group">
+        <label asp-for="Genre" class="control-label">Genre</label>
+        <input type="text" name="Genre" class="form-control" value="@Model.Genre" />
+        <span asp-validation-for="Genre" class="text-danger"></span>
+    </div>
 
-    <label asp-for="YearReleased" class="control-label">Year Released</label>
-    <input type="number" name="YearReleased" class="form-control" value="@Model.YearReleased" />
+    <div class="form-group">
+        <label asp-for="YearReleased" class="control-label">Year Released</label>
+        <input type="number" name="YearReleased" class="form-control" value="@Model.YearReleased" />
+        <span asp-validation-for="YearReleased" class="text-danger"></span>
+    </div>
 
     <input type="submit" value="Update Song" class="btn btn-primary" />
 }

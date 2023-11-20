@@ -7,7 +7,7 @@
 -->
 @model IEnumerable<SongsFrom1950>
 
-<h2></h2> 
+<h2></h2>
 <p><a asp-action="CreateSong">Create New Song</a></p>
 <table class="table">
     <thead>
@@ -36,7 +36,7 @@
                 <td>@song.Genre</td>
                 <td>@song.YearReleased</td>
                 <td>
-                    <!--Allows user to update and delete at index.  No longer need 
+                    <!--Allows user to update and delete at index.  No longer need
                     a singel view-->
                     <a asp-action="UpdateSong" asp-route-id="@song.ID">Update</a>
                     <a asp-action="DeleteSong" asp-route-id="@song.ID">Delete</a>

@@ -14,16 +14,19 @@ namespace SongsByDecade.Controllers
         {
             _repo = repo;
         }
+
         public IActionResult Index()
         {
             var songs = _repo.GetAllSongs();
             return View(songs);
         }
+
         public IActionResult ViewSong(int id)
         {
             var song = _repo.GetSong(id);
             return View(song);
         }
+
         public IActionResult UpdateSong(int id)
         {
             SongsFrom1950 song = _repo.GetSong(id);
@@ -35,21 +38,30 @@ namespace SongsByDecade.Controllers
         }
         public IActionResult UpdateSongToDatabase(SongsFrom1950 song)
         {
-            _repo.UpdateSong(song);
+            if (ModelState.IsValid)
+            {
+                _repo.UpdateSong(song);
+                return RedirectToAction("Index", new { id = song.ID });
+            }
 
-            return RedirectToAction("Index", new { id = song.ID });
+            // If the model is not valid, return the view with validation errors
+            return View("UpdateSong", song);
         }
         public IActionResult CreateSong()
         {
             return View();
         }
-     
         public IActionResult AddSongToDatabase(SongsFrom1950 song)
         {
-            _repo.AddSong(song);
-            return RedirectToAction("Index");
-        }
+            if (ModelState.IsValid)
+            {
+                _repo.AddSong(song);
+                return RedirectToAction("Index");
+            }
 
+            // If the model is not valid, return the view with validation errors
+            return View("CreateSong", song);
+        }
         public IActionResult DeleteSong(int id)
         {
             var song = _repo.GetSong(id);
@@ -59,7 +71,6 @@ namespace SongsByDecade.Controllers
             }
             return View(song);
         }
-
         public IActionResult DeleteSongFromDatabase(int id)
         {
             _repo.DeleteSong(id);

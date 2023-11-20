@@ -1,4 +1,6 @@
-﻿namespace SongsByDecade.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SongsByDecade.Models
 {
     // This class represents the model for songs retrieved from the MySql database.
     // Key Points:
@@ -7,9 +9,17 @@
     public class SongsFrom1950
     {
         public int ID { get; set; }
+
+        [Required(ErrorMessage = "Title is required")]
         public string Title { get; set; }
+
+        [Required(ErrorMessage = "Artist is required")]
         public string Artist { get; set; }
+
+        [Required(ErrorMessage = "Genre is required")]
         public string Genre { get; set; }
+
+        [Required(ErrorMessage = "Year Released is required")]
         public int YearReleased { get; set; }
     }
 }
