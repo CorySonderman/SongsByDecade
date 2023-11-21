@@ -1,13 +1,13 @@
-﻿    // This class represents the model for songs retrieved from the MySql database.
-    // Key Points:
-    // - Properties for title, artist, genre, and year released.(It is important that these
-    //   names match the names in your MySql columns.)
+﻿// This class represents the model for songs retrieved from the MySql database.
+// Key Points:
+// - Properties for title, artist, genre, and year released.(It is important that these
+//   names match the names in your MySql columns.)
 
 using System.ComponentModel.DataAnnotations;
 
 namespace SongsByDecade.Models
 {
-    public class SongsFrom1950
+    public class SongsFrom1990
     {
         public int ID { get; set; }
 

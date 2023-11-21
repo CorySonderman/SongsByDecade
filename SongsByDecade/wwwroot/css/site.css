@@ -1,21 +1,21 @@
 * {
     font-family: "Permanent Marker", sans-serif;
-} 
+}
 
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
@@ -25,26 +25,22 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
     body, body * {
         color: white;
     }
-/* Remove underlines from all links */
+
 a {
     text-decoration: none;
 }
 
 
 
-.custom-button {
-    background-color: transparent;
-    color:white;
-    font-size: 16px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5);
-}
 .footer {
     color: white !important;
 }

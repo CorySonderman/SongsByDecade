@@ -1,14 +1,13 @@
-﻿﻿
-<!--
+﻿<!--
     This view is used for adding a new song to the database.
     Key Points:
     - Form for entering song details (title, artist, genre, year).
     - Sends data to the "AddSongToDatabase" action in SongsController.
 -->
-@model SongsFrom1950
+@model SongsFrom2010
 
 <h2>Add A Title</h2>
-@using (Html.BeginForm("AddSongToDatabase", "SongsFrom1950", FormMethod.Post))
+@using (Html.BeginForm("AddSongToDatabase", "SongsFrom2010", FormMethod.Post))
 {
     <div class="form-group">
         <label asp-for="Title" class="control-label">Title</label>
@@ -38,3 +37,4 @@
         <input type="submit" value="Add Song" class="btn btn-primary" />
     </div>
 }
+

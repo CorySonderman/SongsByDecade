@@ -5,10 +5,10 @@
     - Form for entering song details (title, artist, genre, year).
     - Sends data to the "AddSongToDatabase" action in SongsController.
 -->
-@model SongsFrom1950
+@model SongsFrom1980
 
 <h2>Add A Title</h2>
-@using (Html.BeginForm("AddSongToDatabase", "SongsFrom1950", FormMethod.Post))
+@using (Html.BeginForm("AddSongToDatabase", "SongsFrom1980", FormMethod.Post))
 {
     <div class="form-group">
         <label asp-for="Title" class="control-label">Title</label>
