@@ -6,6 +6,7 @@
 using SongsByDecade.Models;
 using Microsoft.AspNetCore.Mvc;
 namespace SongsByDecade.Controllers
+
 {
     public class SongsFrom1970Controller : Controller
     {
@@ -46,7 +47,6 @@ namespace SongsByDecade.Controllers
                 return RedirectToAction("Index", new { id = song.ID });
             }
 
-            // If the model is not valid, return the view with validation errors
             return View("UpdateSong", song);
         }
 
@@ -63,7 +63,6 @@ namespace SongsByDecade.Controllers
                 return RedirectToAction("Index");
             }
 
-            // If the model is not valid, return the view with validation errors
             return View("CreateSong", song);
         }
 
@@ -84,3 +83,4 @@ namespace SongsByDecade.Controllers
         }
     }
 }
+

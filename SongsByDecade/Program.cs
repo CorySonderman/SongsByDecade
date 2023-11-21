@@ -1,4 +1,5 @@
 using MySql.Data.MySqlClient;
+using PracticeFinalProject;
 using System.Data;
 
 namespace SongsByDecade
@@ -18,7 +19,7 @@ namespace SongsByDecade
                 return conn;
             });
 
-            builder.Services.AddTransient<ISongRepository, SongsFrom1950Repository>();
+            builder.Services.AddTransient<ISongRepository, SongsRepository>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
